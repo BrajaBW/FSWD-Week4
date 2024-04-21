@@ -1,15 +1,13 @@
 const arrayRandom = [];
-for (let i = 0; i < 100; i++) {
-  arrayRandom.push(Math.floor(Math.random() * 50));
-}
-
 let indeksArrayGenap = [];
 let indeksArrayGanjil = [];
-for (let i = 0; i < arrayRandom.length; i++) {
-  if (i % 2 === 0) {
-    indeksArrayGenap.push(i);
-  } else if (i % 2 !== 0) {
-    indeksArrayGanjil.push(i);
+for (let i = 0; i < 100; i++) {
+  arrayRandom.push(Math.floor(Math.random() * 50));
+  if (i % 2 === 0){
+    indeksArrayGenap.push(i)
+  }else if(i % 2 !==0){
+    indeksArrayGanjil.push(i)
+
   }
 }
 let arrayGenap = [];
